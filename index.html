@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Server-Side API</title>
 </head>
-<body>
+
+<body class = "flex-column min-100-vh"">
     <header class = "hero">
-        <h1 class = "title">Weather DashBoard</h1>
+        <h1 class = "title jumbotron " style="text-align: center; color: rgb(107, 105, 105);"">Weather DashBoard</h1>
     </header>
     <main class = "flex-row justify-space-between">
         <div class = "col-12 col-md-4">
+
             <div class = "card">
                 <h3 class = "card-header text-uppercase">Search for a City:</h3>
                 <form id = "user-form" class = "card-body">
@@ -21,9 +23,9 @@
                 </form>
             </div>
 
-            <div class= "card">
-                <h3 class= "card-header text-uppercase">Search By City</h3>
-                <div id= "city-buttons" class="card-body">
+            <div class="card">
+                <h3 class="card-header text-uppercase">Search By City</h3>
+                <div id="city-buttons" class="card-body">
                 <button data-city= "Austin" class= "btn">Austin</button>
                 <button data-city= "Chicago" class= "btn">Chicago</button>
                 <button data-city= "New York" class= "btn">New York</button>
@@ -35,8 +37,10 @@
                 </div>
             </div>
             </div>
+        </div>
 
-
+        <div class = "col-12 col-md-8">
+            <div class = "col-sm-8"></div>
         </div>
     </main>
 
