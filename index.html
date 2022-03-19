@@ -18,31 +18,57 @@
             <div class = "card">
                 <h3 class = "card-header text-uppercase">Search for a City:</h3>
                 <form id = "user-form" class = "card-body">
-                    <input name= "City" id= "City" type= "text" autofocus= "true" class= "form-input" />
-                    <button type = "submit" class = "btn">Search</button>
+                    <input name= "City" id= "City" type= "text" autofocus= "true" class= "form-input"></form>
+                    <button type = "submit" class = "btn" id = "searchButton">Search</button>
                 </form>
             </div>
 
             <div class="card">
                 <h3 class="card-header text-uppercase">Search By City</h3>
                 <div id="city-buttons" class="card-body">
-                <button data-city= "Austin" class= "btn">Austin</button>
-                <button data-city= "Chicago" class= "btn">Chicago</button>
-                <button data-city= "New York" class= "btn">New York</button>
-                <button data-city= "Orlando" class= "btn">Orlando</button>
-                <button data-city= "San Francisco" class= "btn">San Francisco</button>
-                <button data-city= "Seattle" class= "btn">Seattle</button>
-                <button data-city= "Denver" class= "btn">Denver</button>
-                <button data-city= "Atlanta" class= "btn">Atlanta</button>
+                <button data-city= "Austin" class= "btn" id = "searchCityAustin" value = "Austin">Austin</button>
+                <button data-city= "Chicago" class= "btn" id = "searchCityChicago" value = "Chicago">Chicago</button>
+                <button data-city= "New York" class= "btn" id = "searchCityNewYork" value = "New York">New York</button>
+                <button data-city= "Orlando" class= "btn" id = "searchCityOrlando" value = "Orlando">Orlando</button>
+                <button data-city= "San Francisco" class= "btn" id = "searchCitySanFrancisco" value = "San Francisco">San Francisco</button>
+                <button data-city= "Seattle" class= "btn" id = "searchCitySeattle" value = "Seattle">Seattle</button>
+                <button data-city= "Denver" class= "btn" id = "searchCityDenver" value = "Denver">Denver</button>
+                <button data-city= "Atlanta" class= "btn" id = "searchCityAtlanta" value = "Atlanta">Atlanta</button>
                 </div>
             </div>
             </div>
         </div>
 
-        <div class = "col-12 col-md-8">
-            <div class = "col-sm-8"></div>
+        
+        <div class = "col-12 col-md-4">
+            <div class="row ml-2 border border-dark rounded">
+                <div class="col-sm-12" id="current-weather">
+                    <h1 class="city-name mb-1 mt-2 bolder" id="current-city">Atlanta</h1>
+                    <h2>Date: <span class= "current" id="Date"></span></h2>
+                    <p>Temperature: <span class= "current" id="temperature"></span></p>
+                    <p>Humidity: <span class= "current" id="humidity"></span></p> 
+                    <p>Wind Speed: <span class= "current" id="wind-speed"></span></p>
+                    <p>UV index: <span class= "current " id="uv-index"></span></p> 
+            </div>
         </div>
+    </div>
+
+        <div class = "col- col-md-4">
+            <div class="row ml-2 border border-dark rounded">
+                <div >
+                    <h3>5-Day Forecast:</h3>
+                </div>
+                <div id ="boxes" class="row" ></div>
+            </div>
+        </div>
+
     </main>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/assets/js/script.js"></script>
 
 </body>
 </html>
