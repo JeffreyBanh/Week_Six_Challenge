@@ -63,6 +63,7 @@ $("#searchButton").on("click", function (event) {
 
 $("#searchCityAustin").on("click", function (event) {
     event.preventDefault();
+    console.log("hi")
     var city = document.getElementById("searchCityAustin").value
     if (city === "") {
         return;
